@@ -21,4 +21,9 @@ const getAdvice = async () => {
   }
 };
 
-getAdviceBtn.addEventListener("click", getAdvice);
+const renderAdvice = () => {
+  getAdvice();
+};
+
+// Event listener
+getAdviceBtn.addEventListener("click", renderAdvice);
